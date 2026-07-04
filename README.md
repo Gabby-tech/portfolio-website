@@ -1,36 +1,46 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# timilehin-shobande.dev — Portfolio
 
-## Getting Started
+Personal portfolio of **Timilehin Shobande** — software engineer, product builder, and founder of [BossFx](https://bossfxcademy.com). This repo is itself part of the portfolio: the commit history, structure, and decisions are on display, deliberately.
 
-First, run the development server:
+**Live:** https://timilehin-shobande.vercel.app
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## Stack
+
+- [Next.js 16](https://nextjs.org) (App Router, Turbopack) + React + TypeScript
+- [Tailwind CSS](https://tailwindcss.com) v4
+- Deployed on [Vercel](https://vercel.com)
+
+## Structure
+
+```
+app/
+├── layout.tsx                  # Shared shell: nav, footer, metadata (OG, title template)
+├── page.tsx                    # Home: hero, projects, stack, contact
+└── case-studies/
+    └── bossfx/page.tsx         # Engineering case study: architecture, trade-offs, lessons
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Principles
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Content over chrome** — dark, typography-first design; no animation for its own sake.
+- **Honest labeling** — in-development projects say so; no invented metrics anywhere.
+- **Server components by default** — zero client-side JavaScript beyond what Next.js ships; every page is static.
+- **Semantic HTML** — landmarks, labeled nav and lists, accessible link text.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Running locally
 
-## Learn More
+```bash
+npm ci
+npm run dev      # http://localhost:3000
+npm run build    # production build
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Roadmap
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Writing section (first article: August 2026)
+- BossFx Trading Journal case study when it ships (October 2026)
+- Analytics (GA4 + Microsoft Clarity)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+© 2026 Timilehin Shobande · [GitHub](https://github.com/Gabby-tech) · [LinkedIn](https://www.linkedin.com/in/shobande-timilehin-3386711a0)
