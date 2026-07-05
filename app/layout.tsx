@@ -77,7 +77,7 @@ export default function RootLayout({
                 GitHub
               </a>
               <a
-                href="https://www.linkedin.com/in/shobande-timilehin-3386711a0"
+                href="https://www.linkedin.com/in/shobande-timilehin"
                 className="hover:text-accent"
               >
                 LinkedIn

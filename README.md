@@ -46,4 +46,4 @@ npm run build    # production build
 
 ---
 
-© 2026 Timilehin Shobande · [GitHub](https://github.com/Gabby-tech) · [LinkedIn](https://www.linkedin.com/in/shobande-timilehin-3386711a0)
+© 2026 Timilehin Shobande · [GitHub](https://github.com/Gabby-tech) · [LinkedIn](https://www.linkedin.com/in/shobande-timilehin)

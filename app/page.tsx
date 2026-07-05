@@ -174,7 +174,7 @@ export default function Home() {
         <div className="mt-6 flex flex-wrap items-center gap-4">
           <CopyEmailButton />
           <a
-            href="https://www.linkedin.com/in/shobande-timilehin-3386711a0"
+            href="https://www.linkedin.com/in/shobande-timilehin"
             className="rounded-md border border-strong px-5 py-2.5 text-sm font-medium text-heading hover:border-accent hover:text-accent"
           >
             LinkedIn
