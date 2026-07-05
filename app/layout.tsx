@@ -40,49 +40,49 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased scroll-smooth`}
     >
-      <body className="flex min-h-full flex-col bg-zinc-950 font-sans text-zinc-300">
-        <header className="sticky top-0 z-10 border-b border-zinc-800/80 bg-zinc-950/90 backdrop-blur">
+      <body className="flex min-h-full flex-col bg-surface font-sans text-body">
+        <header className="sticky top-0 z-10 border-b border-subtle bg-surface/90 backdrop-blur">
           <nav
             aria-label="Main"
-            className="mx-auto flex max-w-4xl items-center justify-between px-6 py-4"
+            className="mx-auto flex max-w-4xl flex-wrap items-center justify-between gap-y-2 px-6 py-4"
           >
             <Link
               href="/"
-              className="font-semibold tracking-tight text-zinc-100 hover:text-emerald-400"
+              className="whitespace-nowrap font-semibold tracking-tight text-heading hover:text-accent"
             >
               Timilehin Shobande
             </Link>
-            <div className="flex items-center gap-6 text-sm">
-              <Link href="/#projects" className="hover:text-emerald-400">
+            <div className="flex items-center gap-4 text-sm sm:gap-6">
+              <Link href="/#projects" className="hover:text-accent">
                 Projects
               </Link>
-              <Link href="/case-studies/bossfx" className="hover:text-emerald-400">
+              <Link href="/case-studies/bossfx" className="hover:text-accent">
                 Case study
               </Link>
-              <Link href="/writing" className="hover:text-emerald-400">
+              <Link href="/writing" className="hover:text-accent">
                 Writing
               </Link>
-              <Link href="/#contact" className="hover:text-emerald-400">
+              <Link href="/#contact" className="hover:text-accent">
                 Contact
               </Link>
             </div>
           </nav>
         </header>
         <main className="mx-auto w-full max-w-4xl flex-1 px-6">{children}</main>
-        <footer className="border-t border-zinc-800/80">
-          <div className="mx-auto flex max-w-4xl flex-wrap items-center justify-between gap-4 px-6 py-8 text-sm text-zinc-500">
+        <footer className="border-t border-subtle">
+          <div className="mx-auto flex max-w-4xl flex-wrap items-center justify-between gap-4 px-6 py-8 text-sm text-muted">
             <p>© 2026 Timilehin Shobande · Lagos, Nigeria</p>
             <div className="flex gap-5">
-              <a href="https://github.com/Gabby-tech" className="hover:text-emerald-400">
+              <a href="https://github.com/Gabby-tech" className="hover:text-accent">
                 GitHub
               </a>
               <a
                 href="https://www.linkedin.com/in/shobande-timilehin-3386711a0"
-                className="hover:text-emerald-400"
+                className="hover:text-accent"
               >
                 LinkedIn
               </a>
-              <a href="https://bossfxcademy.com" className="hover:text-emerald-400">
+              <a href="https://bossfxcademy.com" className="hover:text-accent">
                 BossFx
               </a>
             </div>

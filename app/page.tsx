@@ -64,17 +64,17 @@ export default function Home() {
   return (
     <>
       <section className="py-24 sm:py-32">
-        <p className="mb-4 font-mono text-sm text-emerald-400">
+        <p className="mb-4 font-mono text-sm text-accent">
           Software Engineer · Product Builder · Founder
         </p>
-        <h1 className="max-w-2xl text-4xl font-bold tracking-tight text-zinc-100 sm:text-5xl">
+        <h1 className="max-w-2xl text-4xl font-bold tracking-tight text-heading sm:text-5xl">
           I build technology that solves meaningful real-world problems.
         </h1>
         <p className="mt-6 max-w-2xl text-lg leading-relaxed">
           I&apos;m a Computer Science graduate from the University of Lagos who
           chose to learn by building. Instead of waiting for my first
           engineering job, I founded{" "}
-          <a href="https://bossfxcademy.com" className="text-emerald-400 hover:underline">
+          <a href="https://bossfxcademy.com" className="text-accent underline decoration-accent/40 underline-offset-2 hover:decoration-accent">
             BossFx
           </a>
           , where I design and ship the software, build the digital products,
@@ -84,40 +84,40 @@ export default function Home() {
         <div className="mt-8 flex flex-wrap gap-4">
           <Link
             href="/case-studies/bossfx"
-            className="rounded-md bg-emerald-500 px-5 py-2.5 text-sm font-medium text-zinc-950 hover:bg-emerald-400"
+            className="rounded-md bg-accent-solid px-5 py-2.5 text-sm font-medium text-on-accent hover:bg-accent-hover"
           >
             Read the engineering case study
           </Link>
           <a
             href="https://github.com/Gabby-tech"
-            className="rounded-md border border-zinc-700 px-5 py-2.5 text-sm font-medium text-zinc-200 hover:border-emerald-400 hover:text-emerald-400"
+            className="rounded-md border border-strong px-5 py-2.5 text-sm font-medium text-heading hover:border-accent hover:text-accent"
           >
             GitHub
           </a>
         </div>
       </section>
 
-      <section id="projects" className="scroll-mt-20 border-t border-zinc-800/80 py-20">
-        <h2 className="text-2xl font-semibold tracking-tight text-zinc-100">Projects</h2>
-        <p className="mt-2 text-zinc-400">
+      <section id="projects" className="scroll-mt-20 border-t border-subtle py-20">
+        <h2 className="text-2xl font-semibold tracking-tight text-heading">Projects</h2>
+        <p className="mt-2 text-secondary">
           Shipped, operating, or honestly labeled as in progress.
         </p>
         <div className="mt-10 grid gap-6 sm:grid-cols-2">
           {projects.map((project) => (
             <article
               key={project.name}
-              className="flex flex-col rounded-lg border border-zinc-800 bg-zinc-900/40 p-6 transition-colors hover:border-zinc-600"
+              className="flex flex-col rounded-lg border border-subtle bg-raised p-6 transition-colors hover:border-strong"
             >
-              <h3 className="text-lg font-semibold text-zinc-100">{project.name}</h3>
-              <p className="mt-1 text-sm text-emerald-400">{project.tagline}</p>
-              <p className="mt-3 flex-1 text-sm leading-relaxed text-zinc-400">
+              <h3 className="text-lg font-semibold text-heading">{project.name}</h3>
+              <p className="mt-1 text-sm text-accent">{project.tagline}</p>
+              <p className="mt-3 flex-1 text-sm leading-relaxed text-secondary">
                 {project.description}
               </p>
               <ul className="mt-4 flex flex-wrap gap-2" aria-label="Tech stack">
                 {project.stack.map((tech) => (
                   <li
                     key={tech}
-                    className="rounded bg-zinc-800 px-2 py-0.5 font-mono text-xs text-zinc-300"
+                    className="rounded bg-chip px-2 py-0.5 font-mono text-xs text-body"
                   >
                     {tech}
                   </li>
@@ -130,7 +130,7 @@ export default function Home() {
                       <Link
                         key={link.href}
                         href={link.href}
-                        className="text-emerald-400 hover:underline"
+                        className="text-accent underline decoration-accent/40 underline-offset-2 hover:decoration-accent"
                       >
                         {link.label} →
                       </Link>
@@ -138,7 +138,7 @@ export default function Home() {
                       <a
                         key={link.href}
                         href={link.href}
-                        className="text-emerald-400 hover:underline"
+                        className="text-accent underline decoration-accent/40 underline-offset-2 hover:decoration-accent"
                       >
                         {link.label} →
                       </a>
@@ -151,13 +151,13 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="border-t border-zinc-800/80 py-20">
-        <h2 className="text-2xl font-semibold tracking-tight text-zinc-100">Stack</h2>
+      <section className="border-t border-subtle py-20">
+        <h2 className="text-2xl font-semibold tracking-tight text-heading">Stack</h2>
         <ul className="mt-6 flex flex-wrap gap-3" aria-label="Skills">
           {skills.map((skill) => (
             <li
               key={skill}
-              className="rounded-md border border-zinc-800 px-3 py-1.5 font-mono text-sm"
+              className="rounded-md border border-subtle px-3 py-1.5 font-mono text-sm"
             >
               {skill}
             </li>
@@ -165,8 +165,8 @@ export default function Home() {
         </ul>
       </section>
 
-      <section id="contact" className="scroll-mt-20 border-t border-zinc-800/80 py-20">
-        <h2 className="text-2xl font-semibold tracking-tight text-zinc-100">Contact</h2>
+      <section id="contact" className="scroll-mt-20 border-t border-subtle py-20">
+        <h2 className="text-2xl font-semibold tracking-tight text-heading">Contact</h2>
         <p className="mt-4 max-w-xl leading-relaxed">
           I&apos;m open to remote software engineering roles, collaborations, and
           interesting problems. The fastest way to reach me:
@@ -175,12 +175,12 @@ export default function Home() {
           <CopyEmailButton />
           <a
             href="https://www.linkedin.com/in/shobande-timilehin-3386711a0"
-            className="rounded-md border border-zinc-700 px-5 py-2.5 text-sm font-medium text-zinc-200 hover:border-emerald-400 hover:text-emerald-400"
+            className="rounded-md border border-strong px-5 py-2.5 text-sm font-medium text-heading hover:border-accent hover:text-accent"
           >
             LinkedIn
           </a>
         </div>
-        <p className="mt-3 text-sm text-zinc-500">
+        <p className="mt-3 text-sm text-muted">
           Clicking the email copies it to your clipboard.
         </p>
       </section>

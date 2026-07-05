@@ -20,10 +20,10 @@ const articles = [
 export default function Writing() {
   return (
     <section className="py-20">
-      <h1 className="text-3xl font-bold tracking-tight text-zinc-100">
+      <h1 className="text-3xl font-bold tracking-tight text-heading">
         Writing
       </h1>
-      <p className="mt-3 max-w-xl text-zinc-400">
+      <p className="mt-3 max-w-xl text-secondary">
         Engineering stories from building real products. No tutorials, no
         hype, just what actually happened.
       </p>
@@ -31,23 +31,23 @@ export default function Writing() {
         {articles.map((article) => (
           <article
             key={article.slug}
-            className="rounded-lg border border-zinc-800 bg-zinc-900/40 p-6 transition-colors hover:border-zinc-600"
+            className="rounded-lg border border-subtle bg-raised p-6 transition-colors hover:border-strong"
           >
-            <p className="font-mono text-sm text-emerald-400">{article.date}</p>
-            <h2 className="mt-2 text-xl font-semibold text-zinc-100">
+            <p className="font-mono text-sm text-accent">{article.date}</p>
+            <h2 className="mt-2 text-xl font-semibold text-heading">
               <Link
                 href={`/writing/${article.slug}`}
-                className="hover:text-emerald-400"
+                className="hover:text-accent"
               >
                 {article.title}
               </Link>
             </h2>
-            <p className="mt-3 leading-relaxed text-zinc-400">
+            <p className="mt-3 leading-relaxed text-secondary">
               {article.summary}
             </p>
             <Link
               href={`/writing/${article.slug}`}
-              className="mt-4 inline-block text-sm text-emerald-400 hover:underline"
+              className="mt-4 inline-block text-sm text-accent underline decoration-accent/40 underline-offset-2 hover:decoration-accent"
             >
               Read the article →
             </Link>

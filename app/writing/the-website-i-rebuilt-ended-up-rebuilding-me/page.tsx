@@ -2,6 +2,10 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import CopyEmailButton from "../../components/copy-email-button";
+import {
+  SectionHeading as H2,
+  CodeBlock as Code,
+} from "../../components/typography";
 
 export const metadata: Metadata = {
   title: "The Website I Rebuilt Ended Up Rebuilding Me",
@@ -16,35 +20,19 @@ export const metadata: Metadata = {
   },
 };
 
-function H2({ children }: { children: React.ReactNode }) {
-  return (
-    <h2 className="mt-14 text-2xl font-semibold tracking-tight text-zinc-100">
-      {children}
-    </h2>
-  );
-}
-
-function Code({ children }: { children: string }) {
-  return (
-    <pre className="overflow-x-auto rounded-lg border border-zinc-800 bg-zinc-900/60 p-4 font-mono text-sm leading-relaxed text-zinc-300">
-      <code>{children}</code>
-    </pre>
-  );
-}
-
 export default function Article() {
   return (
     <article className="py-20">
-      <p className="font-mono text-sm text-emerald-400">Writing · July 2026</p>
-      <h1 className="mt-3 max-w-2xl text-3xl font-bold tracking-tight text-zinc-100 sm:text-4xl">
+      <p className="font-mono text-sm text-accent">Writing · July 2026</p>
+      <h1 className="mt-3 max-w-2xl text-3xl font-bold tracking-tight text-heading sm:text-4xl">
         The Website I Rebuilt Ended Up Rebuilding Me
       </h1>
-      <p className="mt-4 max-w-2xl text-zinc-400">
+      <p className="mt-4 max-w-2xl text-secondary">
         By Timilehin Shobande · What leaving a website builder and owning my
         own stack actually taught me
       </p>
 
-      <div className="mt-12 max-w-2xl space-y-5 leading-relaxed">
+      <div className="mt-12 max-w-prose space-y-5 leading-relaxed">
         <p>
           I started studying Computer Science at the University of Lagos in
           2018. The plan was simple: five years, some projects, an internship
@@ -164,7 +152,7 @@ export default function Article() {
           breaks now, I don&apos;t panic and I don&apos;t assume the framework
           is broken. I ask:
         </p>
-        <ol className="list-decimal space-y-2 pl-5 text-zinc-300">
+        <ol className="list-decimal space-y-2 pl-5 text-body">
           <li>Is it local or production?</li>
           <li>Is it the code or the environment?</li>
           <li>What changed since it last worked?</li>
@@ -265,9 +253,9 @@ if(marginRequired > freeMargin) return minLot;   // never trade what you can't a
             alt="The BossFx SMA Pro Trend EA running in the MT5 Strategy Tester on XAUUSD H1, with the risk dashboard showing trade limits and daily loss protection"
             width={2880}
             height={1800}
-            className="rounded-lg border border-zinc-800"
+            className="rounded-lg border border-subtle"
           />
-          <figcaption className="mt-2 text-sm text-zinc-500">
+          <figcaption className="mt-2 text-sm text-muted">
             The EA in the MT5 Strategy Tester on gold (XAUUSD, H1). The journal
             at the bottom is the trailing stop doing its job.
           </figcaption>
@@ -361,19 +349,19 @@ if(marginRequired > freeMargin) return minLot;   // never trade what you can't a
             alt="The live BossFx Academy homepage: Learn Forex. Build Systems. Trade Like a Pro."
             width={2880}
             height={1800}
-            className="rounded-lg border border-zinc-800"
+            className="rounded-lg border border-subtle"
           />
-          <figcaption className="mt-2 text-sm text-zinc-500">
+          <figcaption className="mt-2 text-sm text-muted">
             The platform today. A long way from a website builder.
           </figcaption>
         </figure>
         <p>
           The work is public now. The platform is live at{" "}
-          <a href="https://bossfxcademy.com" className="text-emerald-400 hover:underline">
+          <a href="https://bossfxcademy.com" className="text-accent underline decoration-accent/40 underline-offset-2 hover:decoration-accent">
             bossfxcademy.com
           </a>
           , the trading system code is on{" "}
-          <a href="https://github.com/Gabby-tech" className="text-emerald-400 hover:underline">
+          <a href="https://github.com/Gabby-tech" className="text-accent underline decoration-accent/40 underline-offset-2 hover:decoration-accent">
             my GitHub
           </a>
           , and I document what I&apos;m building right here. If any of this is
@@ -385,7 +373,7 @@ if(marginRequired > freeMargin) return minLot;   // never trade what you can't a
       <div className="mt-16 flex gap-4">
         <Link
           href="/case-studies/bossfx"
-          className="rounded-md border border-zinc-700 px-5 py-2.5 text-sm font-medium text-zinc-200 hover:border-emerald-400 hover:text-emerald-400"
+          className="rounded-md border border-strong px-5 py-2.5 text-sm font-medium text-heading hover:border-accent hover:text-accent"
         >
           Read the engineering case study
         </Link>

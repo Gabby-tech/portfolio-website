@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import CopyEmailButton from "../../components/copy-email-button";
+import { SectionHeading as H2 } from "../../components/typography";
 
 export const metadata: Metadata = {
   title: "Engineering BossFx — Case Study",
@@ -8,31 +9,23 @@ export const metadata: Metadata = {
     "How I designed, built, re-platformed, and operate a production fintech-education platform solo: architecture, decisions, trade-offs, and lessons.",
 };
 
-function H2({ children }: { children: React.ReactNode }) {
-  return (
-    <h2 className="mt-14 text-2xl font-semibold tracking-tight text-zinc-100">
-      {children}
-    </h2>
-  );
-}
-
 export default function BossFxCaseStudy() {
   return (
     <article className="py-20">
-      <p className="font-mono text-sm text-emerald-400">Engineering case study</p>
-      <h1 className="mt-3 max-w-2xl text-3xl font-bold tracking-tight text-zinc-100 sm:text-4xl">
+      <p className="font-mono text-sm text-accent">Engineering case study</p>
+      <h1 className="mt-3 max-w-2xl text-3xl font-bold tracking-tight text-heading sm:text-4xl">
         BossFx: building and operating a fintech education platform, solo
       </h1>
-      <p className="mt-4 max-w-2xl text-zinc-400">
+      <p className="mt-4 max-w-2xl text-secondary">
         2024–present · Founder &amp; sole engineer ·{" "}
-        <a href="https://bossfxcademy.com" className="text-emerald-400 hover:underline">
+        <a href="https://bossfxcademy.com" className="text-accent underline decoration-accent/40 underline-offset-2 hover:decoration-accent">
           bossfxcademy.com
         </a>
       </p>
 
-      <aside className="mt-8 max-w-2xl rounded-lg border border-emerald-500/30 bg-emerald-500/5 p-5">
-        <p className="text-sm leading-relaxed text-zinc-300">
-          <span className="font-semibold text-emerald-400">
+      <aside className="mt-8 max-w-2xl rounded-lg border border-accent-solid/30 bg-accent-solid/10 p-5">
+        <p className="text-sm leading-relaxed text-body">
+          <span className="font-semibold text-accent">
             The story behind this platform:
           </span>{" "}
           I wrote about what rebuilding BossFx actually felt like — the broken
@@ -40,14 +33,14 @@ export default function BossFxCaseStudy() {
           bug I&apos;ll never forget.{" "}
           <Link
             href="/writing/the-website-i-rebuilt-ended-up-rebuilding-me"
-            className="font-medium text-emerald-400 hover:underline"
+            className="font-medium text-accent underline decoration-accent/40 underline-offset-2 hover:decoration-accent"
           >
             Read &quot;The Website I Rebuilt Ended Up Rebuilding Me&quot; →
           </Link>
         </p>
       </aside>
 
-      <div className="mt-12 max-w-2xl space-y-5 leading-relaxed">
+      <div className="mt-12 max-w-prose space-y-5 leading-relaxed">
         <H2>The problem</H2>
         <p>
           Forex education in Nigeria is dominated by hype and scattered across
@@ -69,28 +62,28 @@ export default function BossFxCaseStudy() {
 
         <H2>Architecture</H2>
         <p>The platform as it runs today:</p>
-        <ul className="list-disc space-y-2 pl-5 text-zinc-400">
+        <ul className="list-disc space-y-2 pl-5 text-secondary">
           <li>
-            <span className="text-zinc-200">Next.js (App Router) + TypeScript + Tailwind CSS</span>{" "}
+            <span className="text-heading">Next.js (App Router) + TypeScript + Tailwind CSS</span>{" "}
             — one framework covering marketing pages, product pages, and API
             routes, deployed on Vercel with zero server management.
           </li>
           <li>
-            <span className="text-zinc-200">Supabase</span> — authentication and
+            <span className="text-heading">Supabase</span> — authentication and
             PostgreSQL. Managed Postgres with row-level security beats
             hand-rolled auth every time when you are the only engineer on call.
           </li>
           <li>
-            <span className="text-zinc-200">Flutterwave</span> — payment
+            <span className="text-heading">Flutterwave</span> — payment
             processing suited to Nigerian rails, wired to automated digital
             product delivery.
           </li>
           <li>
-            <span className="text-zinc-200">Brevo + Formspree</span> — email
+            <span className="text-heading">Brevo + Formspree</span> — email
             automation and form handling as services, not code I maintain.
           </li>
           <li>
-            <span className="text-zinc-200">Google Analytics + Microsoft Clarity</span>{" "}
+            <span className="text-heading">Google Analytics + Microsoft Clarity</span>{" "}
             — quantitative funnels plus session-level behavior, used to decide
             what to build next instead of guessing.
           </li>
@@ -109,20 +102,20 @@ export default function BossFxCaseStudy() {
         </p>
 
         <H2>Trade-offs I&apos;d defend</H2>
-        <ul className="list-disc space-y-2 pl-5 text-zinc-400">
+        <ul className="list-disc space-y-2 pl-5 text-secondary">
           <li>
-            <span className="text-zinc-200">Managed services over control.</span>{" "}
+            <span className="text-heading">Managed services over control.</span>{" "}
             Supabase and Vercel cost flexibility, but they bought me the only
             resource that mattered: time. The wrong choice for a 50-engineer
             company is the right one for a one-engineer company.
           </li>
           <li>
-            <span className="text-zinc-200">Integration over implementation.</span>{" "}
+            <span className="text-heading">Integration over implementation.</span>{" "}
             Payments, email, and forms are all vendors. My code is the glue and
             the product logic — the parts that differentiate.
           </li>
           <li>
-            <span className="text-zinc-200">Analytics before features.</span>{" "}
+            <span className="text-heading">Analytics before features.</span>{" "}
             Instrumentation went in early, so product decisions (which pages,
             which funnels, which products) came from behavior, not opinion.
           </li>
@@ -149,7 +142,7 @@ export default function BossFxCaseStudy() {
       <div className="mt-16 flex gap-4">
         <Link
           href="/#projects"
-          className="rounded-md border border-zinc-700 px-5 py-2.5 text-sm font-medium text-zinc-200 hover:border-emerald-400 hover:text-emerald-400"
+          className="rounded-md border border-strong px-5 py-2.5 text-sm font-medium text-heading hover:border-accent hover:text-accent"
         >
           ← All projects
         </Link>

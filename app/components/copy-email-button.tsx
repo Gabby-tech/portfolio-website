@@ -30,13 +30,13 @@ export default function CopyEmailButton({ label }: { label?: string }) {
         type="button"
         onClick={copy}
         aria-live="polite"
-        className="rounded-md bg-emerald-500 px-5 py-2.5 text-sm font-medium text-zinc-950 hover:bg-emerald-400"
+        className="rounded-md bg-accent-solid px-5 py-2.5 text-sm font-medium text-on-accent hover:bg-accent-hover"
       >
         {copied ? "Copied ✓" : (label ?? EMAIL)}
       </button>
       <a
         href={`mailto:${EMAIL}`}
-        className="text-sm text-zinc-500 hover:text-emerald-400"
+        className="text-sm text-muted hover:text-accent"
       >
         or open in your mail app
       </a>
