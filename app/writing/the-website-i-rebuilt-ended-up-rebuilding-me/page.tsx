@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import CopyEmailButton from "../../components/copy-email-button";
 
 export const metadata: Metadata = {
   title: "The Website I Rebuilt Ended Up Rebuilding Me",
@@ -388,12 +389,7 @@ if(marginRequired > freeMargin) return minLot;   // never trade what you can't a
         >
           Read the engineering case study
         </Link>
-        <a
-          href="mailto:bossfx.official@gmail.com"
-          className="rounded-md bg-emerald-500 px-5 py-2.5 text-sm font-medium text-zinc-950 hover:bg-emerald-400"
-        >
-          Get in touch
-        </a>
+        <CopyEmailButton label="Get in touch" />
       </div>
     </article>
   );

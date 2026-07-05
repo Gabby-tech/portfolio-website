@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import CopyEmailButton from "../../components/copy-email-button";
 
 export const metadata: Metadata = {
   title: "Engineering BossFx — Case Study",
@@ -152,12 +153,7 @@ export default function BossFxCaseStudy() {
         >
           ← All projects
         </Link>
-        <a
-          href="mailto:bossfx.official@gmail.com"
-          className="rounded-md bg-emerald-500 px-5 py-2.5 text-sm font-medium text-zinc-950 hover:bg-emerald-400"
-        >
-          Get in touch
-        </a>
+        <CopyEmailButton label="Get in touch" />
       </div>
     </article>
   );

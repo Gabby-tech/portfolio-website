@@ -1,4 +1,5 @@
 import Link from "next/link";
+import CopyEmailButton from "./components/copy-email-button";
 
 const projects = [
   {
@@ -170,13 +171,8 @@ export default function Home() {
           I&apos;m open to remote software engineering roles, collaborations, and
           interesting problems. The fastest way to reach me:
         </p>
-        <div className="mt-6 flex flex-wrap gap-4">
-          <a
-            href="mailto:bossfx.official@gmail.com"
-            className="rounded-md bg-emerald-500 px-5 py-2.5 text-sm font-medium text-zinc-950 hover:bg-emerald-400"
-          >
-            bossfx.official@gmail.com
-          </a>
+        <div className="mt-6 flex flex-wrap items-center gap-4">
+          <CopyEmailButton />
           <a
             href="https://www.linkedin.com/in/shobande-timilehin-3386711a0"
             className="rounded-md border border-zinc-700 px-5 py-2.5 text-sm font-medium text-zinc-200 hover:border-emerald-400 hover:text-emerald-400"
@@ -184,6 +180,9 @@ export default function Home() {
             LinkedIn
           </a>
         </div>
+        <p className="mt-3 text-sm text-zinc-500">
+          Clicking the email copies it to your clipboard.
+        </p>
       </section>
     </>
   );
