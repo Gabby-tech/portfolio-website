@@ -16,8 +16,11 @@ Personal portfolio of **Timilehin Shobande** — software engineer, product buil
 app/
 ├── layout.tsx                  # Shared shell: nav, footer, metadata (OG, title template)
 ├── page.tsx                    # Home: hero, projects, stack, contact
-└── case-studies/
-    └── bossfx/page.tsx         # Engineering case study: architecture, trade-offs, lessons
+├── case-studies/
+│   └── bossfx/page.tsx         # Engineering case study: architecture, trade-offs, lessons
+└── writing/
+    ├── page.tsx                # Writing index
+    └── the-website-i-rebuilt-ended-up-rebuilding-me/page.tsx  # Article #1 (canonical)
 ```
 
 ## Principles
@@ -37,9 +40,9 @@ npm run build    # production build
 
 ## Roadmap
 
-- Writing section (first article: August 2026)
+- ~~Writing section~~ — live, first article published July 2026
+- ~~Analytics (GA4 + Microsoft Clarity)~~ — live
 - BossFx Trading Journal case study when it ships (October 2026)
-- Analytics (GA4 + Microsoft Clarity)
 
 ---
 

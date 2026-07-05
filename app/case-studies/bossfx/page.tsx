@@ -29,6 +29,23 @@ export default function BossFxCaseStudy() {
         </a>
       </p>
 
+      <aside className="mt-8 max-w-2xl rounded-lg border border-emerald-500/30 bg-emerald-500/5 p-5">
+        <p className="text-sm leading-relaxed text-zinc-300">
+          <span className="font-semibold text-emerald-400">
+            The story behind this platform:
+          </span>{" "}
+          I wrote about what rebuilding BossFx actually felt like — the broken
+          deploys, the debugging method it forced on me, and the trailing-space
+          bug I&apos;ll never forget.{" "}
+          <Link
+            href="/writing/the-website-i-rebuilt-ended-up-rebuilding-me"
+            className="font-medium text-emerald-400 hover:underline"
+          >
+            Read &quot;The Website I Rebuilt Ended Up Rebuilding Me&quot; →
+          </Link>
+        </p>
+      </aside>
+
       <div className="mt-12 max-w-2xl space-y-5 leading-relaxed">
         <H2>The problem</H2>
         <p>

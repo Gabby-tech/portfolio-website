@@ -59,6 +59,9 @@ export default function RootLayout({
               <Link href="/case-studies/bossfx" className="hover:text-emerald-400">
                 Case study
               </Link>
+              <Link href="/writing" className="hover:text-emerald-400">
+                Writing
+              </Link>
               <Link href="/#contact" className="hover:text-emerald-400">
                 Contact
               </Link>
