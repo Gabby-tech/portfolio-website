@@ -9,8 +9,18 @@ export const metadata: Metadata = {
 
 const articles = [
   {
+    slug: "building-a-trustworthy-ai-tutor",
+    title:
+      "Building a Trustworthy AI Tutor: An Engineering Case Study of the BossFx AI Platform",
+    category: "Engineering",
+    date: "July 2026",
+    summary:
+      "A production RAG learning assistant that refuses to guess — and publishes its own quality scores honestly. Why the first quality score was 35.7% on purpose, the bug 86 green tests couldn't see, and the governance rule that became the system's constitution.",
+  },
+  {
     slug: "the-website-i-rebuilt-ended-up-rebuilding-me",
     title: "The Website I Rebuilt Ended Up Rebuilding Me",
+    category: "Engineering",
     date: "July 2026",
     summary:
       "I left a website builder to rebuild BossFx from scratch with Next.js and Supabase. What actually broke, the four debugging questions I ask now, and how the project rebuilt me.",
@@ -33,7 +43,10 @@ export default function Writing() {
             key={article.slug}
             className="rounded-lg border border-subtle bg-raised p-6 transition-colors hover:border-strong"
           >
-            <p className="font-mono text-sm text-accent">{article.date}</p>
+            <p className="font-mono text-sm text-accent">
+              {article.category ? `${article.category} · ` : ""}
+              {article.date}
+            </p>
             <h2 className="mt-2 text-xl font-semibold text-heading">
               <Link
                 href={`/writing/${article.slug}`}
