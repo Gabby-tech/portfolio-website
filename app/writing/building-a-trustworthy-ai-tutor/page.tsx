@@ -14,14 +14,14 @@ export const metadata: Metadata = {
     type: "article",
     publishedTime: "2026-07-12",
     authors: ["Timilehin Shobande"],
-    images: ["/writing/bossfx-live-site.png"],
+    images: ["/writing/ai-tutor-part1-quote.png"],
   },
   twitter: {
     card: "summary_large_image",
     title: "Building a Trustworthy AI Tutor: An Engineering Case Study",
     description:
       "A production RAG tutor that refuses to guess — evaluation-first, human-governed, honest about a 35.7% baseline.",
-    images: ["/writing/bossfx-live-site.png"],
+    images: ["/writing/ai-tutor-part1-quote.png"],
   },
 };
 
@@ -42,7 +42,7 @@ const jsonLd = {
     "@type": "Person",
     name: "Timilehin Shobande",
   },
-  image: "https://timilehin-shobande.vercel.app/writing/bossfx-live-site.png",
+  image: "https://timilehin-shobande.vercel.app/writing/ai-tutor-part1-quote.png",
   mainEntityOfPage: {
     "@type": "WebPage",
     "@id":
