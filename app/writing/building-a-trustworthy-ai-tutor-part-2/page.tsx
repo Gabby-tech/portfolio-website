@@ -14,14 +14,14 @@ export const metadata: Metadata = {
     type: "article",
     publishedTime: "2026-07-25",
     authors: ["Timilehin Shobande"],
-    images: ["/writing/bossfx-live-site.png"],
+    images: ["/writing/ai-tutor-part2-quote.png"],
   },
   twitter: {
     card: "summary_large_image",
     title: "Building a Trustworthy AI Tutor, Part II: Shipping It to the Public",
     description:
       "A trustworthy RAG tutor meets production — the no-login launch, the humbling bugs, and why trust came from process, not intelligence.",
-    images: ["/writing/bossfx-live-site.png"],
+    images: ["/writing/ai-tutor-part2-quote.png"],
   },
 };
 
@@ -42,7 +42,7 @@ const jsonLd = {
     "@type": "Person",
     name: "Timilehin Shobande",
   },
-  image: "https://timilehin-shobande.vercel.app/writing/bossfx-live-site.png",
+  image: "https://timilehin-shobande.vercel.app/writing/ai-tutor-part2-quote.png",
   mainEntityOfPage: {
     "@type": "WebPage",
     "@id":
