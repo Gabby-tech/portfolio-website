@@ -26,6 +26,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
+      url: `${BASE_URL}/writing/building-a-trustworthy-ai-tutor-part-2`,
+      lastModified: new Date("2026-07-25"),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
       url: `${BASE_URL}/writing/the-website-i-rebuilt-ended-up-rebuilding-me`,
       lastModified: new Date("2026-07-01"),
       changeFrequency: "monthly",

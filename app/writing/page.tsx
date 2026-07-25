@@ -9,6 +9,15 @@ export const metadata: Metadata = {
 
 const articles = [
   {
+    slug: "building-a-trustworthy-ai-tutor-part-2",
+    title:
+      "Building a Trustworthy AI Tutor, Part II: Shipping It to the Public",
+    category: "Engineering",
+    date: "July 2026",
+    summary:
+      "What happened when a private, evaluation-gated RAG tutor met production: a no-login public launch, the ordinary bugs that humbled me, and why trust came from engineering process, not intelligence.",
+  },
+  {
     slug: "building-a-trustworthy-ai-tutor",
     title:
       "Building a Trustworthy AI Tutor: An Engineering Case Study of the BossFx AI Platform",

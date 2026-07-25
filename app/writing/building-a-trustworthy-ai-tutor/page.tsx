@@ -319,7 +319,13 @@ export default function Article() {
         </p>
       </div>
 
-      <div className="mt-16 flex gap-4">
+      <div className="mt-16 flex flex-wrap gap-4">
+        <Link
+          href="/writing/building-a-trustworthy-ai-tutor-part-2"
+          className="rounded-md border border-strong px-5 py-2.5 text-sm font-medium text-heading hover:border-accent hover:text-accent"
+        >
+          Read Part II →
+        </Link>
         <Link
           href="/case-studies/bossfx"
           className="rounded-md border border-strong px-5 py-2.5 text-sm font-medium text-heading hover:border-accent hover:text-accent"
